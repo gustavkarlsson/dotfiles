@@ -1,0 +1,33 @@
+[user]
+	name = "Gustav Karlsson"
+	email = "gustav.karlsson@gmail.com"
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	trustctime = false
+[alias]
+	st = "status"
+	ci = "commit"
+	co = "checkout"
+	br = "branch"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = red
+
