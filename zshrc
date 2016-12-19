@@ -87,3 +87,6 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias please='sudo $(fc -ln -1)'
 alias ll='ls -lAh'
+
+# thefuck
+eval "$(thefuck --alias)"
