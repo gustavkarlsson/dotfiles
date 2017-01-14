@@ -91,3 +91,8 @@ alias ll='ls -lAh'
 
 # thefuck
 eval "$(thefuck --alias)"
+
+# man page option completion
+zstyle ':completion:*:manuals'    separate-sections true
+zstyle ':completion:*:manuals.*'  insert-sections   true
+zstyle ':completion:*:man:*'      menu yes select
