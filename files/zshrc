@@ -27,7 +27,7 @@ fi
 # Aliases
 alias please='sudo $(fc -ln -1)'
 alias ll='ls -lAh'
-alias vi=vim
+alias vim=vi
 
 # man page option completion
 zstyle ':completion:*:manuals'    separate-sections true
