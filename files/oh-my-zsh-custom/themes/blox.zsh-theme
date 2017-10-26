@@ -240,7 +240,7 @@ BLOX_BLOCK__SYMBOL_EXIT_COLOR="${BLOX_BLOCK__SYMBOL_EXIT_COLOR:-red}"
 # Symbols
 BLOX_BLOCK__SYMBOL_SYMBOL="${BLOX_BLOCK__SYMBOL_SYMBOL:-❯}"
 BLOX_BLOCK__SYMBOL_EXIT_SYMBOL="${BLOX_BLOCK__SYMBOL_EXIT_SYMBOL:-$BLOX_BLOCK__SYMBOL_SYMBOL}"
-BLOX_BLOCK__SYMBOL_ALTERNATE="${BLOX_BLOCK__SYMBOL_ALTERNATE:-◇}"
+BLOX_BLOCK__SYMBOL_ALTERNATE="${BLOX_BLOCK__SYMBOL_ALTERNATE:-|}"
 
 # --------------------------------------------- #
 # | The block itself
@@ -300,8 +300,8 @@ BLOX_CHAR__NEWLINE="
 # --------------------------------------------- #
 
 # Defualts
-BLOX_SEG_DEFAULT__UPPER_LEFT=(blox_block__host blox_block__cwd blox_block__git)
-BLOX_SEG_DEFAULT__UPPER_RIGHT=(blox_block__bgjobs blox_block__nodejs blox_block__time)
+BLOX_SEG_DEFAULT__UPPER_LEFT=(blox_block__host blox_block__cwd blox_block__git blox_block__bgjobs blox_block__nodejs)
+BLOX_SEG_DEFAULT__UPPER_RIGHT=()
 BLOX_SEG_DEFAULT__LOWER_LEFT=(blox_block__symbol)
 BLOX_SEG_DEFAULT__LOWER_RIGHT=()
 
@@ -430,7 +430,7 @@ ${lower_left} '
   fi
 
   # PROMPT2 (continuation interactive prompt)
-  PROMPT2=' ${BLOX_BLOCK__SYMBOL_ALTERNATE} %_ >>> '
+  PROMPT2=' ${BLOX_BLOCK__SYMBOL_ALTERNATE} %_'
 }
 
 # --------------------------------------------- #
