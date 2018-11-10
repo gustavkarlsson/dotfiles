@@ -1,3 +1,6 @@
 [submodule "files/oh-my-zsh-custom/themes/spaceship-prompt"]
 	path = files/oh-my-zsh-custom/themes/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule "files/oh-my-zsh-custom/plugins/k"]
+	path = files/oh-my-zsh-custom/plugins/k
+	url = https://github.com/supercrabtree/k
