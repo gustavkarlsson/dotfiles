@@ -6,7 +6,11 @@
 [core]
 	autocrlf = input
 	trustctime = false
-	editor = vim
+	editor = code --wait --new-window
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [alias]
 	st = "status"
 	ci = "commit"
