@@ -6,10 +6,9 @@
 [core]
 	autocrlf = input
 	trustctime = false
-	editor = code --wait --new-window
 [diff]
-	tool = default-difftool
-[difftool "default-difftool"]
+	tool = code 
+[difftool "code"]
 	cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [alias]
 	st = "status"
