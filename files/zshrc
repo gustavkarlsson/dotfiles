@@ -6,7 +6,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 ZSH_CUSTOM=${HOME}/.oh-my-zsh-custom
 
-plugins=(git notify-completion zsh-autosuggestions k)
+plugins=(git notify-completion zsh-autosuggestions k sdk)
 
 OH_MY_ZSH_BOOTSTRAP=${ZSH}/oh-my-zsh.sh
 if [ -f "$OH_MY_ZSH_BOOTSTRAP" ]
