@@ -81,3 +81,7 @@ export N_PREFIX="$HOME/Applications/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || 
 # SDKMAN (must be at end of file)
 export SDKMAN_DIR="/home/gustav/.sdkman"
 [[ -s "/home/gustav/.sdkman/bin/sdkman-init.sh" ]] && source "/home/gustav/.sdkman/bin/sdkman-init.sh"
+
+# Install Ruby Gems to ~/.gems
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
