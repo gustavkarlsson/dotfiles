@@ -27,7 +27,8 @@ sudo apt-get install \
     unzip \
     ubuntu-restricted-extras \
     ttf-mscorefonts-installer \
-    fonts-noto-color-emoji
+    fonts-noto-color-emoji \
+    snapd
 
 # Install jetbrains mono
 mkdir -p "$HOME/.fonts" &&
