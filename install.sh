@@ -28,14 +28,18 @@ sudo apt-get install \
     ubuntu-restricted-extras \
     ttf-mscorefonts-installer \
     fonts-noto-color-emoji \
-    snapd
+    snapd \
+    apt-transport-https \
+    ca-certificates \
+    gnupg-agent \
+    software-properties-common    
 
 # Install snaps
-snap install --classic android-studio
-snap install --classic intellij-idea-community
-snap install slack
-snap install vlc
-snap install code
+sudo snap install --classic android-studio
+sudo snap install --classic intellij-idea-community
+sudo snap install --classic slack
+sudo snap install --classic code
+sudo snap install vlc
 
 # Install thefuck
 sudo pip3 install thefuck
@@ -54,14 +58,14 @@ sudo adduser `id -un` kvm
 # Install SDKMAN
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 8.0.202-zulufx
+sdk install java 8.0.232.fx-zulu
 sdk install gradle
 sdk install kotlin
 
 # Install ktlint
 mkdir -p ~/bin
 cd ~/bin
-curl -sSLO https://github.com/shyiko/ktlint/releases/download/0.31.0/ktlint && chmod a+x ktlint
+curl -sSLO https://github.com/shyiko/ktlint/releases/download/0.36.0/ktlint && chmod a+x ktlint
 cd ~
 
 # Install jetbrains mono font
