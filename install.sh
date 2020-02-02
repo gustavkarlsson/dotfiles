@@ -44,10 +44,6 @@ sudo snap install vlc
 # Install thefuck
 sudo pip3 install thefuck
 
-# Install docker
-sudo sh -c "$(curl -fsSL https://get.docker.com)"
-sudo usermod -aG docker `id -un`
-
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
